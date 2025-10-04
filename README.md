@@ -349,7 +349,7 @@ print("商家特征形状:", merchant_features.shape)
     品类/品牌丰富度与转化的关系。
 
 - merchant_corr_[RUN_ID].png
-![merchant_corr_[RUN_ID].png](https://raw.githubusercontent.com/LEO690201/---/refs/heads/main/results/artifacts_20251004_052147/figs/merchant_corr_20251004_052147.png)
+
 <img src="https://raw.githubusercontent.com/LEO690201/---/refs/heads/main/results/artifacts_20251004_052147/figs/merchant_corr_20251004_052147.png" alt="merchant_corr_[RUN_ID].png" width="400" height="400" title="merchant_corr_[RUN_ID].png">
 
 含义：商家特征相关性热力图（采样）。
