@@ -25,7 +25,9 @@
 
 
 - Label Distribution
-![Label Distribution](https://raw.githubusercontent.com/LEO690201/---/refs/heads/main/results/artifacts_20251004_052147/figs/label_distribution_20251004_052147.png)
+
+
+<img src="https://raw.githubusercontent.com/LEO690201/---/refs/heads/main/results/artifacts_20251004_052147/figs/label_distribution_20251004_052147.png" alt="Label Distribution" width="400" height="200" title="Label Distribution">
 
 含义：训练集标签0/1的样本数量分布，反映类别不平衡情况。
 
@@ -38,7 +40,8 @@
 
 
 - Action Type Distribution
-![Action Type Distribution](https://raw.githubusercontent.com/LEO690201/---/refs/heads/main/results/artifacts_20251004_052147/figs/action_type_dist_20251004_052147.png)
+
+<img src="https://raw.githubusercontent.com/LEO690201/---/refs/heads/main/results/artifacts_20251004_052147/figs/action_type_dist_20251004_052147.png" alt="Action Type Distribution" width="400" height="200" title="Action Type Distribution">
 
 
 
@@ -52,7 +55,9 @@
     购买行为极少是常态，属于强不平衡行为
 
 - Monthly Actions & Purchases
-![Monthly Actions & Purchases](https://raw.githubusercontent.com/LEO690201/---/refs/heads/main/results/artifacts_20251004_052147/figs/monthly_trend_20251004_052147.png)
+
+
+<img src="https://raw.githubusercontent.com/LEO690201/---/refs/heads/main/results/artifacts_20251004_052147/figs/monthly_trend_20251004_052147.png" alt="Monthly Actions & Purchases" width="400" height="200" title="Monthly Actions & Purchases">
 
 含义：按month聚合的总体行为数与购买数趋势线（代码中month=time_stamp//100，例：10≈Oct，11≈Nov；is_double11代表双11窗口）。
 
@@ -65,7 +70,8 @@
 
 
 - Top N Merchants by Purchases
-![Top N Merchants by Purchases](https://raw.githubusercontent.com/LEO690201/---/refs/heads/main/results/artifacts_20251004_052147/figs/top_merchants_20251004_052147.png)
+
+<img src="https://raw.githubusercontent.com/LEO690201/---/refs/heads/main/results/artifacts_20251004_052147/figs/top_merchants_20251004_052147.png" alt="Top N Merchants by Purchases" width="400" height="200" title="Top N Merchants by Purchases">
 
 含义：按购买量排序的商家TopN。
 
@@ -76,8 +82,8 @@
     头部商家的购买贡献度。
     是否存在极端头部（长尾分布）。
 - Top N Users by Purchases
-![Top N Users by Purchases](https://raw.githubusercontent.com/LEO690201/---/refs/heads/main/results/artifacts_20251004_052147/figs/top_users_20251004_052147.png)
 
+<img src="https://raw.githubusercontent.com/LEO690201/---/refs/heads/main/results/artifacts_20251004_052147/figs/top_users_20251004_052147.png" alt="Top N Users by Purchases" width="400" height="200" title="Top N Users by Purchases">
 含义：按购买量排序的用户TopN。
 
 坐标轴：`X=Purchases`，`Y=User ID`
@@ -205,7 +211,9 @@ UM特征形状: (14058666, 20)
 
 
 - UM Features Correlation (sample)
-![UM Features Correlation (sample)](https://raw.githubusercontent.com/LEO690201/---/refs/heads/main/results/artifacts_20251004_052147/figs/um_corr_20251004_052147.png) 
+
+<img src="https://raw.githubusercontent.com/LEO690201/---/refs/heads/main/results/artifacts_20251004_052147/figs/um_corr_20251004_052147.png" alt="UM Features Correlation (sample)" width="400" height="400" title="UM Features Correlation (sample)">
+
 
 含义：UM特征相关性热力图（采样列/采样样本）。 
 
@@ -341,7 +349,7 @@ print("商家特征形状:", merchant_features.shape)
 
 - merchant_corr_[RUN_ID].png
 ![merchant_corr_[RUN_ID].png](https://raw.githubusercontent.com/LEO690201/---/refs/heads/main/results/artifacts_20251004_052147/figs/merchant_corr_20251004_052147.png)
-
+<img src="https://raw.githubusercontent.com/LEO690201/---/refs/heads/main/results/artifacts_20251004_052147/figs/merchant_corr_20251004_052147.png" alt="merchant_corr_[RUN_ID].png" width="400" height="400" title="merchant_corr_[RUN_ID].png">
 
 含义：商家特征相关性热力图（采样）。
 
@@ -379,7 +387,8 @@ print("合并形状: train_merged=", train_merged.shape, ", test_merged=", test_
 #### 特征相关性可视化
 
 
-![Feature Correlation (before TE & drop)](https://raw.githubusercontent.com/LEO690201/---/refs/heads/main/results/artifacts_20251004_052147/figs/corr_before_20251004_052147.png)
+
+<img src="https://raw.githubusercontent.com/LEO690201/---/refs/heads/main/results/artifacts_20251004_052147/figs/corr_before_20251004_052147.png" alt="Feature Correlation (before TE & drop)" width="400" height="400" title="Feature Correlation (before TE & drop)">
 
 含义：模型训练前的特征相关性（在目标编码与高相关剔除前的快照）。
 
@@ -388,7 +397,8 @@ print("合并形状: train_merged=", train_merged.shape, ", test_merged=", test_
     初始特征间的线性相关结构。
     为后续“去高相关”提供对照。
 
-![Feature Correlation (after drop)](https://raw.githubusercontent.com/LEO690201/---/refs/heads/main/results/artifacts_20251004_052147/figs/corr_after_20251004_052147.png)
+
+<img src="https://raw.githubusercontent.com/LEO690201/---/refs/heads/main/results/artifacts_20251004_052147/figs/corr_after_20251004_052147.png" alt="Feature Correlation (after drop)" width="400" height="400" title="Feature Correlation (after drop)">
 
 含义：剔除高相关特征后的相关性热力图。
 
@@ -397,7 +407,8 @@ print("合并形状: train_merged=", train_merged.shape, ", test_merged=", test_
     高相关结构是否缓解（块状高相关是否减少）。
     是否仍需进一步手工筛特。
 
-![Merged Feature Correlation (sample)](https://raw.githubusercontent.com/LEO690201/---/refs/heads/main/results/artifacts_20251004_052147/figs/merged_corr_20251004_052147.png)
+
+<img src="https://raw.githubusercontent.com/LEO690201/---/refs/heads/main/results/artifacts_20251004_052147/figs/merged_corr_20251004_052147.png" alt="Merged Feature Correlation (sample)" width="400" height="400" title="Merged Feature Correlation (sample)">
 
 含义：UM、User、Merchant合并后的整体特征相关性（采样）。
 
@@ -517,7 +528,8 @@ OOF（Out-of-Fold）预测用于评估模型在训练数据上的泛化能力。
 
 #### OOF（全折外推）综合评估可视化
 
-![ROC Curve (OOF)](https://raw.githubusercontent.com/LEO690201/---/refs/heads/main/results/artifacts_20251004_052147/figs/oof_20251004_052147_roc.png)
+
+<img src="https://raw.githubusercontent.com/LEO690201/---/refs/heads/main/results/artifacts_20251004_052147/figs/oof_20251004_052147_roc.png" alt="ROC Curve (OOF)" width="400" height="200" title="ROC Curve (OOF)">
 
 含义：使用全体OOF预测的ROC曲线与AUC。
 
@@ -529,7 +541,8 @@ OOF（Out-of-Fold）预测用于评估模型在训练数据上的泛化能力。
 
 
 
-![Precision-Recall Curve (OOF)](https://raw.githubusercontent.com/LEO690201/---/refs/heads/main/results/artifacts_20251004_052147/figs/oof_20251004_052147_pr.png)
+
+<img src="https://raw.githubusercontent.com/LEO690201/---/refs/heads/main/results/artifacts_20251004_052147/figs/oof_20251004_052147_pr.png" alt="Precision-Recall Curve (OOF)" width="400" height="200" title="Precision-Recall Curve (OOF)">
 
 含义：使用全体OOF预测的PR曲线与平均精确率AP。
 
@@ -538,7 +551,9 @@ OOF（Out-of-Fold）预测用于评估模型在训练数据上的泛化能力。
     类不平衡下PR曲线更敏感。低召回区的精确率高低（榜单质量）与高召回区的精确率衰减速度（覆盖能力）。
     在不平衡任务中更直观衡量模型对正样本的捕获质量。
 
-![Calibration (Reliability) Curve](https://raw.githubusercontent.com/LEO690201/---/refs/heads/main/results/artifacts_20251004_052147/figs/oof_20251004_052147_calibration.png)
+
+<img src="https://raw.githubusercontent.com/LEO690201/---/refs/heads/main/results/artifacts_20251004_052147/figs/oof_20251004_052147_calibration.png" alt="Calibration (Reliability) Curve" width="400" height="200" title="Calibration (Reliability) Curve">
+
 
 含义：概率校准曲线，比较预测概率分箱后的真实正例率与完美校准线。
 
@@ -550,7 +565,8 @@ OOF（Out-of-Fold）预测用于评估模型在训练数据上的泛化能力。
     系统性偏高/偏低可以考虑后处理（如Platt scaling/Isotonic）。
     概率预测的可靠性。
 
-![KS Curve](https://raw.githubusercontent.com/LEO690201/---/refs/heads/main/results/artifacts_20251004_052147/figs/oof_20251004_052147_ks.png)
+
+<img src="https://raw.githubusercontent.com/LEO690201/---/refs/heads/main/results/artifacts_20251004_052147/figs/oof_20251004_052147_ks.png" alt="KS Curve" width="400" height="200" title="KS Curve">
 
 含义：累积正负样本曲线及最大间距KS值。
 
@@ -561,7 +577,8 @@ OOF（Out-of-Fold）预测用于评估模型在训练数据上的泛化能力。
     KS值越大，区分度越强；
     KS峰值位置可辅助阈值选择。
 
-![Cumulative Gains Chart](https://raw.githubusercontent.com/LEO690201/---/refs/heads/main/results/artifacts_20251004_052147/figs/oof_20251004_052147_gains.png)
+
+<img src="https://raw.githubusercontent.com/LEO690201/---/refs/heads/main/results/artifacts_20251004_052147/figs/oof_20251004_052147_gains.png" alt="Cumulative Gains Chart" width="400" height="200" title="Cumulative Gains Chart">
 
 含义：按分数从高到低选取人群的累计捕获正例比例，相对随机基线的提升。
 
@@ -619,7 +636,8 @@ OOF（Out-of-Fold）预测用于评估模型在训练数据上的泛化能力。
 
 - SHAP Summary (bar)
 
-![SHAP Summary (bar)](https://raw.githubusercontent.com/LEO690201/---/refs/heads/main/results/artifacts_20251004_052147/figs/shap_summary_bar_20251004_052147.png)
+
+<img src="https://raw.githubusercontent.com/LEO690201/---/refs/heads/main/results/artifacts_20251004_052147/figs/shap_summary_bar_20251004_052147.png" alt="SHAP Summary (bar)" width="400" height="500" title="SHAP Summary (bar)">
 
 含义：基于SHAP的全局特征重要性（平均|SHAP|），前20个特征的影响力大小。
 
@@ -631,7 +649,8 @@ OOF（Out-of-Fold）预测用于评估模型在训练数据上的泛化能力。
 
 - SHAP Beeswarm
 
-![SHAP Beeswarm](https://raw.githubusercontent.com/LEO690201/---/refs/heads/main/results/artifacts_20251004_052147/figs/shap_summary_beeswarm_20251004_052147.png)
+
+<img src="https://raw.githubusercontent.com/LEO690201/---/refs/heads/main/results/artifacts_20251004_052147/figs/shap_summary_beeswarm_20251004_052147.png" alt="SHAP Beeswarm" width="400" height="500" title="SHAP Beeswarm">
 
 含义：展示Top特征的SHAP值分布（每个样本一颗点，颜色代表特征值大小），体现特征对预测是正向还是负向、在不同取值下的影响强度。
 
