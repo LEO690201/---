@@ -286,7 +286,8 @@ print("用户特征形状:", user_features.shape)
     品类/品牌丰富度与转化的关系。
 
 - User Features Correlation (sample)
-![User Features Correlation (sample)](https://raw.githubusercontent.com/LEO690201/---/refs/heads/main/results/artifacts_20251004_052147/figs/user_corr_20251004_052147.png) 
+
+<img src="https://raw.githubusercontent.com/LEO690201/---/refs/heads/main/results/artifacts_20251004_052147/figs/user_corr_20251004_052147.png" alt="User Features Correlation (sample)" width="400" height="400">
 
 含义：用户特征相关性热力图（采样）。
 
